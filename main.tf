@@ -4,11 +4,8 @@ resource vra_cloud_account_aws "this" {
   access_key  = var.access_key
   secret_key  = var.secret_key
   regions     = var.regions
-  dynamic "tags" {
-    for_each = var.tags
-    content {
-      key = tags.value["key"]
-      value = tags.value["value"]
-    }
+  tags {
+    key = "foo"
+    value = "bar"
   }
 }

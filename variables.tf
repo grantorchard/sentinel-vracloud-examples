@@ -25,3 +25,8 @@ variable regions {
   default = []
   description = "The list of regions that should be discovered as targets in this Cloud Account."
 }
+
+variable tags {
+  type = list(map(string))
+  description = "Capability tags to be applied to the Cloud Account"
+}

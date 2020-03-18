@@ -6,6 +6,7 @@ variable name {
 variable description {
   type = string
   default = "Wait, Terraform does this?"
+}
 
 variable access_key {
   type = string

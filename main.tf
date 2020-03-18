@@ -7,8 +7,8 @@ resource vra_cloud_account_aws "this" {
   dynamic "tags" {
     for_each = var.tags
     content {
-      key = setting.value["key"]
-      value = setting.value["value"]
+      key = tags.value["key"]
+      value = tags.value["value"]
     }
   }
 }
